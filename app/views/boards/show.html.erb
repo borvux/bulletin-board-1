@@ -8,7 +8,7 @@
 
     <h2>Add a new post</h2>
 
-    <form action="/insert_board" method="post">
+    <form action="/insert_post" method="post">
       <div>
         <label for="title_box">Title</label>
         <input type="text" id="title_box" name="query_title" value=""> 
@@ -21,7 +21,7 @@
 
       <div>
         <label for="expires_on">Expires on</label>
-        <input type="date" id="expires_on" name="query_experies_on">
+        <input type="date" id="expires_on" name="query_expires_on">
       </div>
 
       <input type="hidden" id="board_id_box" name="query_board_id" value="<%= @the_board.id %>">
